@@ -71,18 +71,8 @@ I really like the game and the difficulty of emulating it is a great challenge f
 ## Workflow
 
 - Create the data containing the regions and each of their attributes
-  - Regions:
-    - Columns:
-      - Name of each region
-    - Rows:
-      - Troop Value
-      - Number of territories in it
-  - Territories:
-    - Columns:
-      - Name of each territory
-    - Rows:
-      - Region (The region where it belongs)
-      - Borders (any adjacent territory to it)
+  - Regions
+  - Territories
 - Create Helper functions, for example read the data into a list or dictionary we can use.
 - Create Core functions of the game, for example calculate the outcome of a battle or each of the game stages loop.
 
@@ -91,14 +81,13 @@ I really like the game and the difficulty of emulating it is a great challenge f
 - Used trello so I could organize and focus on the tasks.
 - The file structure contains:
   - Project folder which serves as a main organizer
-    - data folder to store the .csv files
+    - data folder to store data structures to be used
     - src folder to store the source code
-      -
 
 ## Links
 
 - Official Risk game rules https://www.ultraboardgames.com/risk/game-rules.php
-- Game of thrones map division https://bibliophilica.files.wordpress.com/2014/04/20140402-205937.jpg
+- Game of thrones map https://quartermaester.info/
 
 [Repository](https://github.com/)  
 [Trello](https://trello.com/en)
