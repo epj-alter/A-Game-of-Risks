@@ -1,8 +1,6 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of Your Project
-
-_[A Game of Risks]_
+# Project: A Game of Risks
 
 _[DATA ANALYTICS FULL TIME, Berlin & jun.2020]_
 

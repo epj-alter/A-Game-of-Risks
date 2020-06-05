@@ -1,7 +1,7 @@
-from game import core
-from game.player import Player
+from core.game import Game
+from core.player import Player
 
-player1 = Player("blue", 20)
+players = set()
+game = Game()
 
-print(player1.color)
-print(core.simulate_battle())
+game.set_n_players()

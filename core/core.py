@@ -1,7 +1,3 @@
-def simulate_battle():
-    return 12
-
-
 _map = {
     "The North": {
         "value": 4,
