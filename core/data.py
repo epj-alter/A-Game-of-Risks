@@ -62,3 +62,6 @@ _map = {
         }
     },
 }
+
+player_colors = ["Red", "Green", "Blue", "Yellow",
+                 "Purple", "Cyan", "Orange"]

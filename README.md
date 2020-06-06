@@ -16,24 +16,25 @@ _[DATA ANALYTICS FULL TIME, Berlin & jun.2020]_
 
 This is a basic version of the popular game **Risk**, also themed like **Game of Thrones** because I really like their fantasy world.
 
-I really like the game and the difficulty of emulating it is a great challenge for my current python skills.
+I really like the game and the difficulty of emulating it, it is a great challenge for my current python skills.
 
-## Rules
+## Overview
 
-### Setup
+### Game Start
 
-- Select a color and, depending on the number of players, count out the "armies" you'll need to start the game.
+- The game will ask how many players are going to play the game (min 2 max 6)
+- The number of starting troops per player is 120 divided by the number of players
 
-  - If 2 are playing, see special instructions.
-  - If 3 are playing, each player counts out 35 Troops.
+  - If 2 are playing, each player counts out 60 troops
+  - If 3 are playing, each player counts out 40 Troops.
   - If 4 are playing, each player counts out 30 Troops.
-  - If 5 are playing, each player counts out 25 Troops.
+  - If 5 are playing, each player counts out 24 Troops.
   - If 6 are playing, each player counts out 20 Troops.
 
 - Turn order is randomly selected.
 
-- Each player by turn can select a territory by either typing in the territory's name or the territory's number,
-  there is also an option to just type in the territory's region and you will be assigned a random territory.
+- Each player by turn has to select a territory by typing in the territory's name,
+  there is also an option to just type in the territory's region and you will be assigned a random territory in that region.
 
 - After all territories are claimed troop deployment round starts, allowing each player by turn to add a bulk of troops to the territory
   of their choice until players run out of troops.
@@ -71,8 +72,11 @@ I really like the game and the difficulty of emulating it is a great challenge f
 - Create the data containing the regions and each of their attributes
   - Regions
   - Territories
-- Create Helper functions, for example read the data into a list or dictionary we can use.
-- Create Core functions of the game, for example calculate the outcome of a battle or each of the game stages loop.
+- Create the Player class
+- Create the Game Class
+  - Add a function to set the number of players
+  - Add a function to set the attributes of players (player color and the number of starting troops)
+  - Add a function to random player's turn order
 
 ## Organization
 

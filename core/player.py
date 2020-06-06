@@ -3,10 +3,12 @@ class Player:
     Handles player creation
     """
 
-    def __init__(self, color: str, n_troops: int):
+    def __init__(self, color, n_troops):
+        """
+        Creates a new Player
+        """
         self.color = color
         self.troops = n_troops
-        self.territories = {}
 
     def add_troops(self, n_troops: int):
         self.troops += n_troops

@@ -1,7 +1,4 @@
 from core.game import Game
-from core.player import Player
+import random
 
-players = set()
-game = Game()
-
-game.set_n_players()
+new_game = Game()
