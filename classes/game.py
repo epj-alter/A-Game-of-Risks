@@ -1,15 +1,18 @@
-from IPython.display import clear_output
-from core.player import Player
-from core.data import player_colors
+import csv
 import random
+from IPython.display import clear_output
+from classes.player import Player
+from classes.world import World
 
 
 class Game:
 
     # Variables
+    world = World()
     n_players = 0
     start_troops = 0
     players = []
+    owned_territories = []
 
     def __init__(self):
         """
@@ -24,29 +27,28 @@ class Game:
         """
         Sets the number of players in the Game
         """
+        complain = ""
         while True:
             clear_output()
             try:
                 self.n_players = int(
-                    input("Please insert the number of players (between 2 to 6): \n"))
+                    input(f"{complain}Please insert the number of players (between 2 to 6): \n"))
                 if self.n_players >= 2 and self.n_players < 7:
                     self.start_troops = 120 / self.n_players
                     break
                 elif self.n_players < 2:
-                    self.n_players = print("Not enough players!")
+                    complain = "Not enough players!\n"
                 elif self.n_players >= 7:
-                    self.n_players = print("Too many players!")
+                    complain = "Too many players!\n"
             except:
                 pass
-
-        print(f"The number of players is {self.n_players}")
-        print(f"The number of troops is {self.start_troops}")
 
     def init_players(self):
         """
         initializes players and their attributes
         generates player's turn randomly
         """
+        complain = ""
         players_turn = random.sample(range(self.n_players), self.n_players)
         players_created = {}
         # debug
@@ -54,16 +56,17 @@ class Game:
         picked_colors = []
         for x in range(self.n_players):
             while True:
+                clear_output()
                 try:
                     color = input(
-                        f"Player {x+1}, please type in one of the following colors: ({', '.join([x for x in player_colors if x not in picked_colors])}):\n").capitalize()
-                    if color in player_colors and color not in picked_colors:
+                        f"{complain}Player {x+1}, please type in one of the following colors: ({', '.join([x.capitalize() for x in self.world.player_colors if x not in picked_colors])}):\n").lower()
+                    if color in self.world.player_colors and color not in picked_colors:
                         picked_colors.append(color)
                         players_created[players_turn[x]] = Player(
-                            color, self.start_troops)
+                            color.capitalize(), self.start_troops)
                         break
                     else:
-                        print("Color is currently not available :(")
+                        complain = "Please enter a valid color\n"
                 except:
                     pass
 

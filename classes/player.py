@@ -2,6 +2,9 @@ class Player:
     """
     Handles player creation
     """
+    # variables
+    color = ""
+    troops = 0
 
     def __init__(self, color, n_troops):
         """

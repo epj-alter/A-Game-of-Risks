@@ -33,8 +33,8 @@ I really like the game and the difficulty of emulating it, it is a great challen
 
 - Turn order is randomly selected.
 
-- Each player by turn has to select a territory by typing in the territory's name,
-  there is also an option to just type in the territory's region and you will be assigned a random territory in that region.
+- Each player by turn has to select a territory by typing in the territory's name, one troop will be placed in that territory.
+  There is also an option to just type in the territory's region and the player will be assigned a random territory in that region.
 
 - After all territories are claimed troop deployment round starts, allowing each player by turn to add a bulk of troops to the territory
   of their choice until players run out of troops.
@@ -74,9 +74,11 @@ I really like the game and the difficulty of emulating it, it is a great challen
   - Territories
 - Create the Player class
 - Create the Game Class
-  - Add a function to set the number of players
-  - Add a function to set the attributes of players (player color and the number of starting troops)
-  - Add a function to random player's turn order
+  - set the number of players
+  - set the attributes of players (player color and the number of starting troops)
+    and create a list containing the players ordered by turn
+  - add territory selection function
+  - add troop deployment function
 
 ## Organization
 
