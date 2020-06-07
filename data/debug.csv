@@ -1,0 +1,5 @@
+name,region,borders,owner,troops
+Castle Black,The North,Dreadfort
+Dreadfort,The North,Castle Black-Winterfell-White Harbor
+Winterfell,The North,Bear Island-Dreadfort-White Harbor
+Bear Island,The North,Winterfell
