@@ -79,6 +79,12 @@ I really like the game and the difficulty of emulating it, it is a great challen
     and create a list containing the players ordered by turn
   - add territory selection phase
   - add troop deployment function
+  - start game function
+    - check if a player does not own all of the territories in the map, else end the game and declare the winner.
+    - calculates the number of troops to give the player.
+    - lets the player deploy.
+    - lets the player attack.
+    - end turn.
 
 ## Organization
 

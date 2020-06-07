@@ -54,5 +54,11 @@ class World:
         Updates the territory owner and troops accordingly to the values passed in
         """
         # refactor
-        self.territories[[i for i, x in enumerate(self.territories) if x["Name"] == territory_name][0]].update(
-            {"Owner": new_onwer, "Troops": n_troops})
+        territory = self.territories[[i for i, x in enumerate(
+            self.territories) if x["Name"] == territory_name][0]]
+        troops = territory["Troops"] + n_troops
+        if troops < 0:
+            troops = 0
+
+        territory.update(
+            {"Owner": new_onwer, "Troops": troops})
