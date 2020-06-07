@@ -3,31 +3,3 @@ Castle Black,The North,Dreadfort
 Dreadfort,The North,Castle Black-Winterfell-White Harbor
 Winterfell,The North,Bear Island-Dreadfort-White Harbor
 Bear Island,The North,Winterfell
-White Harbor,The North,Greywater Watch-Winterfell-Dreadfort
-Greywater Watch,The North,White Harbor-The Twins
-The Twins,King's Lands,Iron Islands-Greywater Watch-The Vale-Riverrun
-The Vale,King's Lands,The Twins-Riverrun-King's Landing
-Iron Islands,King's Lands,The Twins-Lannisport-Riverrun
-Riverrun,King's Lands,Iron Islands-The Twins-The Vale-Lannisport-King's Landing
-Lannisport,King's Lands,Iron Islands-Riverrun-Old Oak-King's Landing
-King's Landing,King's Lands,The Vale-Riverrun-Lannisport-Summerhall-High Garden
-Summerhall,The South,King's Landing-High Garden-Old Oak
-Old Oak,The South,Lannisport-Summerhall-High Garden
-High Garden,The South,King's Landing-Summerhall-Old Oak-Old Town
-Old Town,The South,High Garden-Dorne
-Dorne,The South,Old Town-Tyrosh
-Tyrosh,The Free Cities,Dorne-Myr
-Myr,The Free Cities,Tyrosh-Pentos-Volantis-Qohor
-Pentos,The Free Cities,Myr-Norvos-Braavos
-Braavos,The Free Cities,Pentos-Norvos
-Norvos,The Free Cities,Pentos-Braavos-Qohor
-Qohor,The Free Cities,Norvos-Myr-Forest of Qohor-Volantis
-Volantis,The Free Cities,Myr-Qohor-Mantarys
-Forest of Qohor, The Dorthraki Sea,Qohor-Vaes Dothrak
-Vaes Dothrak, The Dorthraki Sea,Forest of Qohor-Meeren-Lhazar
-Lhazar, The Dorthraki Sea,Vaes Dothrak-Meeren
-Mantarys, The Shadow Lands,Volantis-Elyria
-Elyria, The Shadow Lands,Mantarys-Meeren-Valyria-Astapor
-Valyria, The Shadow Lands,Elyria-Astapor
-Astapor, The Shadow Lands,Valyria-Meeren-Elyria
-Meeren, The Shadow Lands,Mantarys-Astapor-Vaes Dothrak-Lhazar

@@ -77,7 +77,7 @@ I really like the game and the difficulty of emulating it, it is a great challen
   - set the number of players
   - set the attributes of players (player color and the number of starting troops)
     and create a list containing the players ordered by turn
-  - add territory selection function
+  - add territory selection phase
   - add troop deployment function
 
 ## Organization
