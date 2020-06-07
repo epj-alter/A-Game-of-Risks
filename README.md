@@ -48,6 +48,7 @@ I really like the game and the difficulty of emulating it, it is a great challen
 
 - You will get a number of troops at the start of your turn, the number of troops is calculated in the following manner:
 
+  - Each player gets 1 base troop at the start of each turn.
   - The number of territories you occupy divided by 3, ignoring any fraction.
   - The value of the region you control. The number of extra armies is different for each region:
     - The North: 4
@@ -99,5 +100,5 @@ I really like the game and the difficulty of emulating it, it is a great challen
 - Official Risk game rules https://www.ultraboardgames.com/risk/game-rules.php
 - Game of thrones map https://quartermaester.info/
 
-[Repository](https://github.com/)  
-[Trello](https://trello.com/en)
+[Repository](https://github.com/fs1m/A-Game-of-Risks)  
+[Trello](https://trello.com/b/w0WPdeiK/module-1-project-a-game-of-risks)

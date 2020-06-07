@@ -31,11 +31,11 @@ class Player:
         Adds a territory to the player
         if n_troops is not identified then 1 is the default value
         """
-        self.territories.append({"Name": territory_name, "Troops": n_troops})
+        self.territories.append(territory_name)
 
     def remove_territory(self, territory_name: str):
         """
         Removes the specified territory from the player
         """
         self.territories = [
-            territory for territory in self.territories if territory["Name"] != territory_name]
+            x for x in self.territories if x != territory_name]
