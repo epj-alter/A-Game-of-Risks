@@ -116,7 +116,7 @@ class Game:
         while any(x for x in self.players if x.troops > 0):
             for i, player in enumerate(self.players):
                 complain = ""
-                troops_to_assign = 20  # shoud be 3
+                troops_to_assign = 3  # shoud be 3
                 if player.troops < 3:
                     troops_to_assign = player.troops
                 while player.troops > 0:
