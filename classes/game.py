@@ -91,8 +91,8 @@ class Game:
                 selected_territory = None
                 while True:
                     clear_output()
+                    self.world.show_territories()
                     try:
-                        self.world.show_territories()
                         selected_territory = ' '.join([x.capitalize() for x in input(
                             f"{phase_name}{complain}{player.color} player's Turn\nType in the name of one of the territories displayed, choose wisely!:\n").split()])
                         # updates territory owner
@@ -121,8 +121,8 @@ class Game:
                     troops_to_assign = player.troops
                 while player.troops > 0:
                     clear_output()
+                    self.world.show_territories()
                     try:
-                        self.world.show_territories()
                         print(f"{phase_name}\n")
                         print(
                             f"You have {int(player.troops)} Troops left.\n")

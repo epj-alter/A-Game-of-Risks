@@ -47,7 +47,7 @@ class World:
         Prints all the territories and its attributes
         """
         # note: create an image with the available territories is for reference.
-        print(pandas.DataFrame(self.territories))
+        print(f"{pandas.DataFrame(self.territories)}")
 
     def update_territory_data(self, territory_name: str, new_onwer: str, n_troops=1):
         """
